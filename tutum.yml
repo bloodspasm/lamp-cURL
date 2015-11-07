@@ -1,0 +1,9 @@
+lamp:
+  image: tutum/lamp
+  ports:
+    - 2222:22
+    - 80:80
+    - 3306:3306
+  environment:
+    - AUTHORIZED_KEYS=YOUR SSH PUBLIC KEY HERE
+    
