@@ -37,7 +37,7 @@ RUN a2enmod rewrite
 RUN mkdir -p /app && rm -fr /var/www/html && ln -s /app /var/www/html
 RUN chmod -R 777 /app
 RUN chmod -R 777 /var/www/html
-# RUN chown -R www-data:www-data /app/wp-content /var/www/html
+RUN chown -R www-data:www-data /app/wp-content /var/www/html
 
 #Enviornment variables to configure php
 ENV PHP_UPLOAD_MAX_FILESIZE 50M
